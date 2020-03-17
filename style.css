@@ -1,0 +1,31 @@
+    body {
+        font: 1em sans-serif;
+        text-align: center;
+    }
+    .stage {
+        display: flex;
+        height: 330px;
+        width: 100%;
+    }
+    .box {
+        align-self: flex-end;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        background-color: transparent;
+        height: 150px;
+        width: 150px;
+        margin: 0 auto 0 auto;
+        transform-origin: bottom;
+        background: url('icon.png') no-repeat center/cover;
+    }
+    .bounce-4 {
+        animation-name: bounce-4;
+        animation-timing-function: ease;
+    }
+    @keyframes bounce-4 {
+        0%   { transform: scale(1,1)    translateY(0); }
+        10%  { transform: scale(1.1,.9) translateY(0); }
+        30%  { transform: scale(.9,1.1) translateY(-100px); }
+        50%  { transform: scale(1,1)    translateY(0); }
+        100% { transform: scale(1,1)    translateY(0); }
+    }
