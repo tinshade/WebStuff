@@ -1,0 +1,189 @@
+<!-- AUTHOR : ABHISHEK IYENGAR -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="chirps.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+	    .w3-quarter img{cursor: pointer}
+	    .w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+	    .videopad{
+	      padding:4%;
+	    }
+	    .imagepad{
+	      padding:4%;
+	    }
+		.container {
+		}
+
+		.overlay {
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  height: 100%;
+		  width: 100%;
+		  opacity: 0;
+		  transition: .5s ease;
+		  background-color: #376029;
+		}
+
+		.container:hover .overlay {
+		  opacity: 0.8;
+		}
+
+		.text {
+		  color: #376029;
+		  font-size: 20px;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -webkit-transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		  text-align: center;
+		  background-color: #fff;
+		}
+		.textcon{
+		  width : 350px;
+		  height : 270px;
+		}
+    </style>
+    <title>GALLERY</title>
+</head>
+<body>
+
+<section id = "Chirpers">
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main w3-content" style="max-width:1600px;">
+ 
+  <div class="w3-row">
+    <div class="w3-quarter">
+      <div class="card imagepad container container">
+          <img src="css/Images/Gallery/Fauna/Ashy Drongo.jpg" alt="Ashy Drongo">
+          <div class="overlay">
+        <div class="text textcon" onclick="AshyDrongo()">The ashy drongo (Dicrurus leucophaeus) is a species of bird in the drongo family Dicruridae. It is found widely distributed across South and Southeast Asia with several populations that vary in the shade of grey, migration patterns and in the size or presence of white....<a href="https://en.wikipedia.org/wiki/Ashy_drongo">Read more</a></div>
+      </div>
+      </div>
+      <div class="card imagepad container">
+          <img src="css/Images/Gallery/Fauna/Bee Eater.jpg" onclick="BeeEater()" alt="Bee Eater">
+          <div class="overlay">
+        <div class="text textcon" onclick="BeeEater()">The bee-eaters are a group of near-passerine birds in the family Meropidae containing three genera and 27 species. Most species are found in Africa and Asia, with a few in southern Europe, Australia, and New Guinea. They are characterised by.... <a href="https://en.wikipedia.org/wiki/Bee-eater">Read more</a></div>
+      </div>
+      </div>
+      <div class="card imagepad container">
+          <img src="css/Images/Gallery/Fauna/Coppersmith BarbetOLD.jpg" onclick="CoppersmithBarbet()" alt="Coppersmith Barbet">
+          <div class="overlay">
+        <div class="text textcon" onclick="CoppersmithBarbet()">The coppersmith barbet, crimson-breasted barbet or coppersmith (Psilopogon haemacephalus), is a bird with crimson forehead and throat, known for its metronomic call that sounds similar to a coppersmith striking metal with a hammer. It is a resident found .... <a href="https://en.wikipedia.org/wiki/Coppersmith_barbet">Read more</a></div>
+      </div>
+      </div>
+   </div>
+    
+   <div class="w3-quarter">
+      <div class="card imagepad container">
+          <img src="css/Images/Gallery/Fauna/Golden Oriole.jpg" alt="Golden Oriole">
+          <div class="overlay">
+        <div class="text textcon" onclick="GoldenOriole()">The Eurasian golden oriole (Oriolus oriolus) or simply golden oriole, is the only member of the oriole family of passerine birds breeding in Northern Hemisphere temperate regions. It is a summer migrant in Europe and western Asia and spends the winter season in central .... <a href="https://en.wikipedia.org/wiki/Eurasian_golden_oriole">Read more</a></div>
+      </div>
+      </div>
+      <div class="card imagepad container">
+          <img src="css/Images/Gallery/Fauna/Greater Coucal.jpg" alt="Greater Coucal">
+          <div class="overlay">
+        <div class="text textcon" onclick="GreaterCoucal()">The greater coucal or crow pheasant (Centropus sinensis), is a large non-parasitic member of the cuckoo order of birds, the Cuculiformes. A widespread resident in the Indian Subcontinent and Southeast Asia, it is divided into several subspecies, some ....<a href="https://en.wikipedia.org/wiki/Greater_coucal">Read more</a></div>
+      </div>
+      </div>
+      <div class="card imagepad container">
+          <img src="css/Images/Gallery/Fauna/Jungle Sparrow.jpg" alt="Jungle Sparrow">
+          <div class="overlay">
+        <div class="text textcon" onclick="JungleSparrow()">The Sind sparrow (Passer pyrrhonotus) is a passerine bird of the sparrow family, Passeridae, found around the Indus valley region in South Asia. It is also known as the jungle, Sind jungle, or rufous-backed sparrow. Very similar to the ....<a href="https://en.wikipedia.org/wiki/Sind_sparrow">Read more</a></div>
+      </div>
+      </div>
+   </div>
+    
+    <div class="w3-quarter">
+      <div class="card imagepad container">
+          <img src="css/Images/Gallery/Fauna/Laughing Dove.jpg" alt="Laughing Dove">
+          <div class="overlay">
+        <div class="text textcon" onclick="LaughingDove()">The laughing dove (Spilopelia senegalensis) is a small pigeon that is a resident breeder in Africa, the Middle East and the Indian Subcontinent. This small long-tailed dove is found in dry scrub and semi-desert habitats where pairs can often be seen feeding on the ground....<a href="https://en.wikipedia.org/wiki/Laughing_dove">Read more</a></div>
+      </div>
+      </div>
+      <div class="card imagepad container">
+          <img src="css/Images/Gallery/Fauna/Oriental Magpie Robin.jpg" alt="Oriental Magpie Robin">
+          <div class="overlay">
+        <div class="text textcon" onclick="OrientalMagpieRobin()">The oriental magpie-robin (Copsychus saularis) is a small passerine bird that was formerly classed as a member of the thrush family Turdidae, but now considered an Old World flycatcher. They are distinctive black and white birds with a long tail that...<a href="">Read more</a></div>
+      </div>
+      </div>
+      <div class="card imagepad container">
+          <img src="css/Images/Gallery/Fauna/Purple Rumped Sunbird.jpg" alt="Purple Rumped Sunbird">
+          <div class="overlay">
+        <div class="text textcon" onclick="PurpleRumpedSunbird()">The purple-rumped sunbird (Leptocoma zeylonica) is a sunbird endemic to the Indian Subcontinent. Like other sunbirds, they are small in size, feeding mainly on nectar but sometimes take insects, particularly when feeding young. They can....<a href="https://en.wikipedia.org/wiki/Purple-rumped_sunbird">Read more</a></div>
+      </div>
+      </div>
+   </div>
+
+    <div class="w3-quarter">
+      <div class="card imagepad container">
+          <img src="css/Images/Gallery/Fauna/Red Vented Bulbul.jpg" alt="Red Vented Bulbul">
+          <div class="overlay">
+        <div class="text textcon" onclick="RedVentedBulbul()">The red-vented bulbul (Pycnonotus cafer) is a member of the bulbul family of passerines. It is resident breeder across the Indian subcontinent, including Sri Lanka extending east to Burma and parts of Tibet. It has been introduced in many other parts of the world and....<a href="https://en.wikipedia.org/wiki/Red-vented_bulbul">Read more</a></div>
+      </div>
+      </div>
+      <div class="card imagepad container">
+          <img src="css/Images/Gallery/Fauna/Scaly Breasted Munia.jpg" alt="Scaly Breasted Munia">
+          <div class="overlay">
+        <div class="text textcon" onclick="ScalyBreastedMunia()">The scaly-breasted munia or spotted munia (Lonchura punctulata), known in the pet trade as nutmeg mannikin or spice finch, is a sparrow-sized estrildid finch native to tropical Asia. A species of the genus Lonchura, it was formally described ....<a href="https://en.wikipedia.org/wiki/Scaly-breasted_munia">Read more</a></div>
+      </div>
+      </div>
+      <div class="card imagepad container">
+          <img src="css/Images/Gallery/Fauna/Black Drongo.jpg" alt="Black Drongo">
+          <div class="overlay">
+        <div class="text textcon" onclick="BlackDrongo()">The black drongo (Dicrurus macrocercus) is a small Asian passerine bird of the drongo family Dicruridae. It is a common resident breeder in much of tropical southern Asia from southwest Iran through India and Sri Lanka east to southern China and Indonesia. It ....<a href="https://en.wikipedia.org/wiki/Black_drongo">Read more</a></div>
+      </div>
+      </div>
+   </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+<!-- End page content -->
+</div>
+</section>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>

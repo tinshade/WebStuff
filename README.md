@@ -1,8 +1,8 @@
-# RANDOM IMAGE RANDOM PLACE
-A simple JS, HTML project that allows spawning of random images from a set of given images, at a random place, from a set of given spawn areas.
+# WebStuff
+Clicking on a bird's image will play the sound that particular bird makes. This is a achieved by simple JS and HTML with a bit of CSS and BootStrap to make things look pretty.
 
-I made this to be used as a background to a Jumbotron to attact and stall the user's attention whilst they read the text on the foreground of the Jumbotron.
+The feature is live and can be checked out here : http://palforests.com/gallery . Navigate to 'Chirpers' Section and tap on any bird to learn more about it, whilst enjoying the sound it makes.
 
-The feature is live at : http://palforests.com/Afforestation if you want to check it out for yourself.
 
-PS. The Open Source version does not include the CSS and BootStrap used in the actual implementation.
+
+PS. I can not add the CSS or the website's actual code so I will be only adding what I can. :(
