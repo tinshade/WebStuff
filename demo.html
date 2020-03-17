@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Abhishek Iyengar"/>
+		<meta name="description" content="This is an example of a displaying random image on a random image tag with JavaScript and HTML.">
+		<title>Random Image, Random Place Demo</title>
+	<!-- Main script that achieves Random Image and Place display -->
+		<script type="text/javascript">
+			function getRandomImage() {
+				//Arrays for Image and IMG Tag names
+				var random_images_array = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','10.jpg','11.jpg','12.jpg','13.jpg','14.jpg','15.jpg','16.jpg','17.jpg','18.jpg','19.jpg','20.jpg','21.jpg','22.jpg','23.jpg','24.jpg','25.jpg','26.jpg','27.jpg','28.jpg'];
+				var random_element = ['c1','c2','c3','c4'];
+
+			    //console.log('Clicked'); //Debugging	    
+			    //!Add a default path in the string if the path is to be defined by user/might not be available
+			    var path = 'images/'
+			    path = path || 'images/'; 
+
+			    //Randomizing the Images array
+			    var num = Math.floor( Math.random() * random_images_array.length);
+			    var img = random_images_array[num]; //Choosing the image array with the random number selected
+
+			    //Randomizing the Position array
+			    var rnum = Math.floor(Math.random() * random_element.length);
+			    var elem = random_element[rnum]; //Choosing the position array with the random number selected
+
+			    var imgdsp = document.getElementById(elem).src=path+img; //FINALLY displaying the image with the path as the source and on chosen postion
+			}
+		</script>
+	</head>
+<body>
+
+	<h1>Display Random Image on Random img Tags Using JavaScript</h1>
+	<p>Images will spawn at random and in random image tags.</p>
+
+	<div>
+		<!-- Adding img tags with IDs to get them in the function. -->
+	    <br>
+	    <img id="c1" src="css/Images/Afforestation/1.jpg" width="200px" height="200px"/>
+	    <img id="c2" src="css/Images/Afforestation/2.jpg" width="200px" height="200px"/>
+	    <img id="c3" src="css/Images/Afforestation/3.jpg" width="200px" height="200px"/>
+	    <img id="c4" src="css/Images/Afforestation/4.jpg" width="200px" height="200px"/>
+	    <br>
+	    <!-- Adding a button to call the main function and setting it to hidden to make it look like automation with scripts -->
+	    <button id="thisguy" style="display: none" onclick="getRandomImage()">Hello</button>
+	</div>
+
+
+	<!-- FOOTER SCRIPTS -->
+	<!-- The previous version kept multiplying the arrays in Fibonacci sequence for some reason so I decided to change it. -->
+	<!-- This script clicks the button which will in turn run the getRandomImage Function to achieve random images at random tags. -->
+	<script>
+	    (function(){
+	        setInterval(function () {document.getElementById("thisguy").click();}, 6000);
+	    })();
+	</script>
+</body>
+</html>

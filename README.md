@@ -1,2 +1,4 @@
-# Zoom Hover Effect
-This CSS effect allows to zoom-in to the image on mouse hover. This is a simple example with a wide range of use-cases.
+# POSTING WEBSITE BUILDING FEATURES
+From time to time I stumble upon websites that have features like no other.
+In this repository, I am trying to replicate what I saw alongside adding my own features and implementations or improvisions of the same.
+

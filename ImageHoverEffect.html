@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Hover Effect</title>
+	<style type="text/css">
+		.wrap{
+			width: 500px;
+			height: 500px;
+			overflow: hidden;
+		}
+		.zoom{
+			height: 100%;
+			transition: transform 200ms linear;
+		}
+		.zoom:hover{
+			transform: scale(1.15);
+		}
+		.center {
+		  margin: auto;
+		  width: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<h1>HERE'S A COOL IMAGE HOVER EFFECT!</h1>
+		<div class="wrap" style="margin: auto">
+			<img src="https://source.unsplash.com/random" alt="Random image from unsplash.com" class="zoom"/>
+		</div>
+		
+	</div>
+</body>
+</html>
